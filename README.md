@@ -6,24 +6,22 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
-    <li><a href="#Preface">Preface</a></li>
-    <li>
-      <a href="#Details of CVPR2022 AISafety Challenge">Details of CVPR2022 AISafety Challenge</a>
-      <ul>
-        <li><a href="#Information of AISafety Challenge">Information of AISafety Challenge</a></li>
-        <li><a href="#Environment">Environment</a></li>
-        <li><a href="#Datasets">Datasets</a></li>
-        <li><a href="#Details of Our Solution">Details of Our Solution</a></li>
-        <li><a href="#Training Details">Training Details</a></li>
-        <li><a href="#Inference Details">Inference Details</a></li>
-        <li><a href="#CheckPoints">CheckPoints</a></li>
-        <li><a href="#Conclusion">Conclusion</a></li>
-        <li><a href="#Reference">Reference</a></li>
-      </ul>
-    </li>
+<li><a href="#Preface">Preface</a></li>
+<li>
+  <a href="#Details of CVPR2022 AISafety Challenge">Details of CVPR2022 AISafety Challenge</a>
+  <ul>
+    <li><a href="#Information of AISafety Challenge">Information of AISafety Challenge</a></li>
+    <li><a href="#Environment">Environment</a></li>
+    <li><a href="#Datasets">Datasets</a></li>
+    <li><a href="#Details of Our Solution">Details of Our Solution</a></li>
+    <li><a href="#Training Details">Training Details</a></li>
+    <li><a href="#Inference Details">Inference Details</a></li>
+    <li><a href="#CheckPoints">CheckPoints</a></li>
+    <li><a href="#Conclusion">Conclusion</a></li>
     <li><a href="#Reference">Reference</a></li>
-</details>
+  </ul>
+</li>
+<li><a href="#Reference">Reference</a></li>
 
 ---
 ## Preface
