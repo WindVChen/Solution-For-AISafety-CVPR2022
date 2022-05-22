@@ -18,7 +18,6 @@
     <li><a href="#Inference Details">Inference Details</a></li>
     <li><a href="#CheckPoints">CheckPoints</a></li>
     <li><a href="#Conclusion">Conclusion</a></li>
-    <li><a href="#Reference">Reference</a></li>
   </ul>
 </li>
 <li><a href="#Reference">Reference</a></li>
