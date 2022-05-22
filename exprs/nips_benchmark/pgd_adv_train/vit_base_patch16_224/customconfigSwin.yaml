@@ -1,0 +1,92 @@
+model:
+    type: swin_tiny
+    kwargs:
+        drop_rate: 0.1
+        attn_drop_rate: 0.0
+        drop_path_rate: 0.0
+        num_classes: 100 # number of classes
+
+dist:
+    sync: True
+
+optimizer:
+    type: AdamW
+    no_wd:
+        fc: False
+        norm: False
+    kwargs:
+        weight_decay: 0.05
+
+lr_scheduler:
+    type: CosineEpoch
+    kwargs:
+        base_lr: 0.000001
+        warmup_lr: 0.0003
+        min_lr: 0.000001
+        # warmup_steps: 2500
+        # max_iter: 125000
+        warmup_epoch: 2
+        max_epoch: 300
+
+label_smooth: 0.1
+
+mixup: 0.2
+cutmix: 1.0
+
+ema:
+    enable: False
+    kwargs:
+        decay: 0.9999
+
+data:
+    type: custom
+    read_from: fake
+    use_dali: False
+    batch_size: 256
+    num_workers: 16
+    pin_memory: True
+    input_size: 224
+    test_resize: 256
+
+    train:
+        root_dir: /dataset/images/
+        meta_file: /dataset/images/images.txt
+        image_reader:
+            type: pil
+        sampler:
+            type: distributed_iteration
+        transforms:
+            type: AUGMIXMORECUSTOMAUTOAUG
+
+    test:
+        root_dir: /dataset/val/
+        meta_file: /dataset/val/val.txt
+#        root_dir: /media/disk/zyl/Competition/Data/test/
+#        meta_file:
+        image_reader:
+            type: pil
+        sampler:
+            type: distributed
+        transforms:
+            type: ONECROP
+        evaluator:
+            type: imagenet
+            kwargs:
+                topk: [1, 5]
+
+saver:
+    print_freq: 10
+    val_freq: 2000
+    save_many: False
+    pretrain:
+        path: /code/2022-05-20-02-38-36/checkpoints/ckpt_best.pth.tar
+#        path: /media/disk/zyl/Competition/Swin_Pretrain/output/swin_tiny_patch4_window7_224/default/ckpt_epoch_299.pth
+        ignore:                     # ignore keys in checkpoints
+            key:                    # if training from scratch, pop 'optimzier' and 'last_iter'
+                 - optimizer         # if resuming from ckpt, DO NOT pop them
+                 - last_iter
+#            model:                  # ignore modules in model
+#                 - module.head.weight  # if training with different number of classes, pop the keys
+#                 - module.head.bias    # of last fully-connected layers
+
+
