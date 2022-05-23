@@ -8,10 +8,10 @@
 ## Updates
 **2022/05/23**
 
-1. Thanks for the advice from xxx, we provide our training result of ```SwinTransformer-Tiny```. You can find it in
+1. Thanks for the advice from __*magic-liu2021*__, we provide our training result of ```SwinTransformer-Tiny```. You can find it in
 the <a href="#CheckPoints">CheckPoints</a> part.
 
-2. Also thanks for the advice from xxx, we provide our training dataset in [OpenI](https://openi.org.cn/), you can fetch that
+2. Also thanks for the advice from __*magic-liu2021*__, we provide our training dataset in [OpenI](https://openi.org.cn/), you can fetch that
 [here](https://git.openi.org.cn/explore/datasets) by searching CVPR2022_AISafety_Challenge_Track1_Phase2. Details can be
 found in the <a href="#Datasets">Datasets</a> part.
 
