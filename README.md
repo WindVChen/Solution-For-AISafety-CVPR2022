@@ -116,11 +116,11 @@ You can find our inference code in ```Inference``` directory, where we use the *
 
 ### CheckPoints
 For quick re-implementation of our code, we provide our First-step SwinTransformer-Tiny pretrained weight, you can fetch that
-[here](https://drive.google.com/file/d/1i7h4ewIu7R0CTQCAvh8_AlF6BkGZxi0J/view?usp=sharing). Or you can train First-step by yourself, please note
+here [[Google drive](https://drive.google.com/file/d/1i7h4ewIu7R0CTQCAvh8_AlF6BkGZxi0J/view?usp=sharing) | [Baidu drive](链接：https://pan.baidu.com/s/1SisTtIAe1zODgyCIxtv-7Q) (code:rs0o)]. Or you can train First-step by yourself, please note
 that when using the official implementation of SwinTransformer, you should first reformat the dataset into Imagefolder format, we provide
 a transform code in ```DataProcess/transfer_data.py```.
 
-We also provide our final model result [here](https://drive.google.com/file/d/1HMIiESKASDoTnzaAD9G4ES_9zPIUlYKk/view?usp=sharing) for verification. Also should note that, as the white-box attack implemented
+We also provide our final model result here [[Google drive](https://drive.google.com/file/d/1HMIiESKASDoTnzaAD9G4ES_9zPIUlYKk/view?usp=sharing) | [Baidu drive](https://pan.baidu.com/s/19Hcoq1SghK8PjNnIu3j0MQ) (code:0sul)] for verification. Also should note that, as the white-box attack implemented
 by the organizer is sampling according to certain parameters and the current final result is according to just one test, 
 the final result maybe biased. Here, we advise to attack with **5 or more random start** for the robust evaluation, which can remove
 some random biases.
