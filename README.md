@@ -116,7 +116,7 @@ You can find our inference code in ```Inference``` directory, where we use the *
 
 ### CheckPoints
 For quick re-implementation of our code, we provide our First-step SwinTransformer-Tiny pretrained weight, you can fetch that
-here [[Google drive](https://drive.google.com/file/d/1i7h4ewIu7R0CTQCAvh8_AlF6BkGZxi0J/view?usp=sharing) | [Baidu drive](链接：https://pan.baidu.com/s/1SisTtIAe1zODgyCIxtv-7Q) (code:rs0o)]. Or you can train First-step by yourself, please note
+here [[Google drive](https://drive.google.com/file/d/1i7h4ewIu7R0CTQCAvh8_AlF6BkGZxi0J/view?usp=sharing) | [Baidu drive](https://pan.baidu.com/s/1SisTtIAe1zODgyCIxtv-7Q) (code:rs0o)]. Or you can train First-step by yourself, please note
 that when using the official implementation of SwinTransformer, you should first reformat the dataset into Imagefolder format, we provide
 a transform code in ```DataProcess/transfer_data.py```.
 
