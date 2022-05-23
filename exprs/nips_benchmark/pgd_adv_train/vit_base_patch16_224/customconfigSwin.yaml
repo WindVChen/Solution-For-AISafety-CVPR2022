@@ -61,8 +61,6 @@ data:
     test:
         root_dir: /dataset/val/
         meta_file: /dataset/val/val.txt
-#        root_dir: /media/disk/zyl/Competition/Data/test/
-#        meta_file:
         image_reader:
             type: pil
         sampler:
@@ -80,7 +78,7 @@ saver:
     save_many: False
     pretrain:
         path: /code/2022-05-20-02-38-36/checkpoints/ckpt_best.pth.tar
-#        path: /media/disk/zyl/Competition/Swin_Pretrain/output/swin_tiny_patch4_window7_224/default/ckpt_epoch_299.pth
+#        path: /Swin_Pretrain/output/swin_tiny_patch4_window7_224/default/ckpt_epoch_299.pth
         ignore:                     # ignore keys in checkpoints
             key:                    # if training from scratch, pop 'optimzier' and 'last_iter'
                  - optimizer         # if resuming from ckpt, DO NOT pop them

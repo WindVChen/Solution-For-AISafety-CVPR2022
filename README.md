@@ -4,6 +4,24 @@
 
 ![CoverPage](./Pic/CoverPage.png)
 
+---
+## Updates
+**2022/05/23**
+
+1. Thanks for the advice from xxx, we provide our training result of ```SwinTransformer-Tiny```. You can find it in
+the <a href="#CheckPoints">CheckPoints</a> part.
+
+2. Also thanks for the advice from xxx, we provide our training dataset in [OpenI](https://openi.org.cn/), you can fetch that
+[here](https://git.openi.org.cn/explore/datasets) by searching CVPR2022_AISafety_Challenge_Track1_Phase2. Details can be
+found in the <a href="#Datasets">Datasets</a> part.
+
+**2022/05/22**
+
+Initial comments
+
+1. We provide our ```strategy details``` and ```final model weight```.
+
+---
 
 <!-- TABLE OF CONTENTS -->
 <li><a href="#Preface">Preface</a></li>
@@ -49,6 +67,17 @@ During the competition, we also get much help from the free GPU resource from [O
 on OpenI, you can reach the environment [here](https://git.openi.org.cn/explore/images?type=myimage) by searching the keyword ```SWA```.
 
 ### Datasets
+We provide our training dataset in [OpenI](https://openi.org.cn/), you can fetch that
+[here](https://git.openi.org.cn/explore/datasets) by searching CVPR2022_AISafety_Challenge_Track1_Phase2.  The dataset structure 
+is as following:
+```
+├── images
+        ├── 127390 images  # all images are used for training.
+        ├── images.txt
+├── val
+        ├── 31848 images  # 1/4 part of all images
+        ├── val.txt
+```
 - Phase II data: **127390 images**, label ranged in 0~99
 - Phase II label: **label.txt**
 
@@ -73,10 +102,10 @@ enlarge the ```softmax temperature``` of the softmax layer in the **inference ph
  defense (**20 or more points boost**).
 
 ### Training Details
-- First, please refer to [SwinTransformer](https://github.com/microsoft/Swin-Transformer) to train a SwinTransformer-Tiny in a standard way, as
+- First-step: please refer to [SwinTransformer](https://github.com/microsoft/Swin-Transformer) to train a SwinTransformer-Tiny in a standard way, as
 the challenge forbids the use of pretrained model. Also, the train code for Swin-Transformer in RobustART seems failed to
 reach a very good result, so we advise to train by the official implementation code (**1 or more points boost**).
-- Then, you can train based on the model got from the first step, just run:
+- Second-step: you can train based on the model got from the first step, just run:
 
   ```python prototype/prototype/solver/cls_solver.py```
   
@@ -86,7 +115,12 @@ reach a very good result, so we advise to train by the official implementation c
 You can find our inference code in ```Inference``` directory, where we use the **high softmax temperature operation**.
 
 ### CheckPoints
-We also provide our final result [here](https://drive.google.com/file/d/1HMIiESKASDoTnzaAD9G4ES_9zPIUlYKk/view?usp=sharing) for verification. Also should note that, as the white-box attack implemented
+For quick re-implementation of our code, we provide our First-step SwinTransformer-Tiny pretrained weight, you can fetch that
+[here](https://drive.google.com/file/d/1i7h4ewIu7R0CTQCAvh8_AlF6BkGZxi0J/view?usp=sharing). Or you can train First-step by yourself, please note
+that when using the official implementation of SwinTransformer, you should first reformat the dataset into Imagefolder format, we provide
+a transform code in ```DataProcess/transfer_data.py```.
+
+We also provide our final model result [here](https://drive.google.com/file/d/1HMIiESKASDoTnzaAD9G4ES_9zPIUlYKk/view?usp=sharing) for verification. Also should note that, as the white-box attack implemented
 by the organizer is sampling according to certain parameters and the current final result is according to just one test, 
 the final result maybe biased. Here, we advise to attack with **5 or more random start** for the robust evaluation, which can remove
 some random biases.
