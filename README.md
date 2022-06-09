@@ -8,7 +8,6 @@
 
 ## Share us a :star: if this repo does help
 
----
 ## Preface
 Hi, we are the team named **WindPassStreet** and this is our solution for Track1 in [AISafety CVPR2022 Challenge]((https://aisafety.sensetime.com/#/intro)). We provide a **simple and effective** way to reach a
 robust model which can achieve high accuracy in the challenge. 
