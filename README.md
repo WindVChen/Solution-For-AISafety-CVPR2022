@@ -1,8 +1,24 @@
 # A Simple and Effective Solution For AISafety CVPR2022
 
-[![Rank 5](https://img.shields.io/badge/Effective%20Solution-5th--Solution--For--AISafety--CVPR2022-red)](https://github.com/WindVChen/Solution-For-AISafety-CVPR2022)
-
 ![CoverPage](./Pic/CoverPage.png)
+
+[![Rank 5](https://img.shields.io/badge/Effective%20Solution-5th--Solution--For--AISafety--CVPR2022-red)](https://github.com/WindVChen/Solution-For-AISafety-CVPR2022)
+![GitHub stars](https://badgen.net/github/stars/windvchen/Solution-For-AISafety-CVPR2022
+)
+
+## Share us a :star: if this repo does help
+
+---
+## Preface
+Hi, we are the team named **WindPassStreet** and this is our solution for Track1 in [AISafety CVPR2022 Challenge]((https://aisafety.sensetime.com/#/intro)). We provide a **simple and effective** way to reach a
+robust model which can achieve high accuracy in the challenge. 
+
+In this repository, we also provide our final submitted model weights for verification, due to the randomness of the attack sampled,
+the score based on the final model weight can range from **88.12~89.08** (seems to be a big deviation, which corresponds to our rank from **3rd to 5th**). Maybe some kind of unlucky, our final submission
+happened to be at a very low point, and now we are ranked at **5th**. Thus, please put aside the ranking for a moment, and just focus on our solution. 
+We also provide some advice for alleviating randomness at last.
+
+If you encounter any question, please feel free to contact us. You can create an issue or just send email to me windvchen@gmail.com. Also welcome for any idea exchange and discussion.
 
 ---
 ## Updates
@@ -39,19 +55,6 @@ Initial commits
   </ul>
 </li>
 <li><a href="#Reference">Reference</a></li>
-
----
-## Preface
-Hi, we are the team named **WindPassStreet** and this is our solution for Track1 in [AISafety CVPR2022 Challenge]((https://aisafety.sensetime.com/#/intro)). We provide a **simple and effective** way to reach a
-robust model which can achieve high accuracy in the challenge. 
-
-In this repository, we also provide our final submitted model weights for verification, due to the randomness of the attack sampled,
-the score based on the final model weight can range from **88.12~89.08** (seems to be a big deviation, which corresponds to our rank from **3rd to 5th**). Maybe some kind of unlucky, our final submission
-happened to be at a very low point, and now we are ranked at **5th**. Thus, please put aside the ranking for a moment, and just focus on our solution. 
-We also provide some advice for alleviating randomness at last.
-
-If you encounter any question, please feel free to contact us. You can create an issue or just send email to me windvchen@gmail.com. Also welcome for any idea exchange and discussion.
-
 
 ---
 
