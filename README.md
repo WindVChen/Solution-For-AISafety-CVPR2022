@@ -46,11 +46,11 @@ Hi, we are the team named **WindPassStreet** and this is our solution for Track1
 robust model which can achieve high accuracy in the challenge. 
 
 In this repository, we also provide our final submitted model weights for verification, due to the randomness of the attack sampled,
-the score based on the final model weight can range from **88.12~89.08** (seems to be a big deviation). Maybe some kind of unlucky, our final submission
+the score based on the final model weight can range from **88.12~89.08** (seems to be a big deviation, which corresponds to our rank from **3rd to 5th**). Maybe some kind of unlucky, our final submission
 happened to be at a very low point, and now we are ranked at **5th**. Thus, please put aside the ranking for a moment, and just focus on our solution. 
 We also provide some advice for alleviating randomness at last.
 
-If you encounter any question, please feel free to contact us. You can create an issue or just send email to me 984958836@qq.com. Also welcome for any idea exchange and discussion.
+If you encounter any question, please feel free to contact us. You can create an issue or just send email to me windvchen@gmail.com. Also welcome for any idea exchange and discussion.
 
 
 ---
