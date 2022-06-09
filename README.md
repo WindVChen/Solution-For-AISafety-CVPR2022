@@ -17,7 +17,7 @@ found in the <a href="#Datasets">Datasets</a> part.
 
 **2022/05/22**
 
-Initial comments
+Initial commits
 
 1. We provide our ```strategy details``` and ```final model weight```.
 
